@@ -1,12 +1,9 @@
 import React from 'react'
-import Navbar from './component/navbar/Navbar'
-import News from './component/news'
 
 const App = () => {
   return (
     <div>
-    <Navbar/>
-    <News/>
+      <h1>My App</h1>
       
     </div>
   )
