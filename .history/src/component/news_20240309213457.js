@@ -5,7 +5,7 @@ const News = () => {
     const fetchData = async() =>{
         let resonse= await fetch( "https://newsapi.org/v2/top-headlines?country=us&apiKey=c147315bcfe54a3cbbda7f1c80227f43")
         let data = await resonse.json();
-        // setnews(data.articles)
+        setnews(data.articles)
     console.log(resonse.status)
     console.log(resonse.body)
     console.log(data)
@@ -23,6 +23,8 @@ const News = () => {
     },[])
   return (  
     <>
+    {/* {lnews.map(e =>  <li>{e}</li> )} */}
+    {lnews.length}
     </>
 
 
